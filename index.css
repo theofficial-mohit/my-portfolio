@@ -303,7 +303,7 @@ nav .fa-solid{
         display: block;
     }
     nav ul{
-        background:#ff004f;
+        background:red;
         position:fixed;
         top: 0;
         right: -200px;
