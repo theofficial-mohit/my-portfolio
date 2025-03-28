@@ -84,6 +84,33 @@ nav ul li a:hover::after{
 .header-text h1 span{
     color:red;
 }
+.typewriter {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black;
+    animation: typing 5s steps(30, end) infinite, blink 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 30ch;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: transparent;
+    }
+    to {
+        border-color: black;
+    }
+}
 #about{
     padding: 100px 0;
     color: #ababab;
@@ -295,7 +322,7 @@ nav .fa-solid{
         background-image: url(mo.jpg);
     } 
     .header-text{
-        margin-top: 70%;
+        margin-top: 60%;
         font-size: 16px;
     }
     .header-text h1{
