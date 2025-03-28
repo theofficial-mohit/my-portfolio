@@ -328,6 +328,33 @@ nav .fa-solid{
     .header-text h1{
         font-size: 61px;
     }
+    .typewriter {
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black;
+    animation: typing 5s steps(30, end) infinite, blink 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 30ch;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: transparent;
+    }
+    to {
+        border-color: black;
+    }
+}
     nav .fa-solid{
         display: block;
     }
